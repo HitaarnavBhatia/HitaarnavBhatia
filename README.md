@@ -3,11 +3,11 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=hitaarnavbhatia&label=Profile%20views&color=0e75b6&style=flat" alt="hitaarnavbhatia" /> </p>
 
-- 🔭 I’m currently working on **Enhancing my Programming Knowledge**
+- 🔭 I’m currently working on **Enhancing my Programming Knowledge** and i am proficient in Frontend Development
 
 - 🌱 I’m currently learning **Data Structures and Algorithms**
 
-- 💬 Ask me about **Linux,C ,Python ,C++,Java ,Android/Computer/Laptops Hardware & Other technology related stuff**
+- 💬 Ask me about **Linux,C ,Python ,C,Java ,Android/Computer/Laptops Hardware & Other technology related stuff**
 
 - 📫 How to reach me **bhatiahitaarnav@gmail.com**
 
