@@ -26,4 +26,15 @@
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/HitaarnavBhatia"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="HitaarnavBhatia" /></a></p><br><br>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=hitaarnavbhatia&show_icons=true&locale=en" alt="hitaarnavbhatia" /></p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=hitaarnavbhatia&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=hitaarnavbhatia&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitaarnavbhatia&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
+
