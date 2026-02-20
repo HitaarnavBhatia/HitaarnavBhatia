@@ -110,18 +110,4 @@
        alt="streak stats" 
   />
 
-  <!-- GitHub Stats Card -->
-  <img 
-       width="390" 
-       src="https://github-readme-stats.vercel.app/api?username=hitaarnavbhatia&show_icons=true&theme=react&rank_icon=github&border_radius=10&cache_seconds=1800&v=2" 
-       alt="readme stats" 
-  />
-
-  <!-- Top Languages -->
- <img 
-  width="325" 
-  align="center" 
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitaarnavbhatia&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5&cache_seconds=1800&v=3" 
-  alt="top langs" 
-/>
 </div>
