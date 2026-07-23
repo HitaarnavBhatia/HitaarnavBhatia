@@ -67,14 +67,13 @@ I enjoy taking applications from code to deployed services. Recent work has invo
 - **Amit Traders**: a responsive Angular e-commerce site with cart and checkout flows.
 
 ---
+## 📊 GitHub Stats
 
-<h2 align="center">📊 GitHub Stats</h2>
+<p align="center">
+  <img width="390" src="https://github-readme-streak-stats.herokuapp.com/?user=hitaarnavbhatia&count_private=true&theme=react&border_radius=10" alt="Streak stats" />
+</p>
 
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=hitaarnavbhatia&show_icons=true&count_private=true&hide_border=true&theme=react" alt="github stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hitaarnavbhatia&layout=compact&hide_border=true&theme=react" alt="top languages" />
-</div>
+<p align="center">
+  <img height="100" src="https://readme-stats-github.pages.dev/api/typing?lines=improving%20myself.....&theme=shadow&color=%233b82f6&particleColor=%2320232B&background=%23ffffff" alt="Typing animation" />
+</p>
 
-<div align="center">
-  <img width="390" src="https://github-readme-streak-stats.herokuapp.com/?user=hitaarnavbhatia&count_private=true&theme=react&border_radius=10" alt="streak stats" />
-</div>
