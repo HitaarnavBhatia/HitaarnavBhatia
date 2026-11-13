@@ -41,9 +41,9 @@ GH = f"https://github.com/{USER}"
 # Featured work, in order. "repo" entries pull language and last push from the API;
 # the rest (team / uni projects not on this account) use the fields given here.
 FEATURED = [
-    {"repo": "REIT4841_ThesisTool", "kind": "THESIS",
-     "desc": "Honours thesis: builds a verified CVE benchmark and auto-discovers missing sinks for taint-analysis tools."},
-    {"repo": "TrainForge", "kind": "REPO",
+    {"name": "PetrolPal", "kind": "CLOUD ARCHITECTURE", "lang": "Python + TS", "meta": "AWS · Terraform",
+     "desc": "Fuel-price app on AWS: Python microservices on ECS, Terraform infrastructure, TypeScript + Google Maps frontend."},
+    {"repo": "TrainForge", "kind": "AI · FULL-STACK",
      "desc": "Django coaching platform: trainers manage clients, plans and bookings, with AI workout suggestions."},
     {"name": "WeWorkWell", "kind": "TEAM PROJECT", "lang": "HL7 FHIR", "meta": "wearables",
      "desc": "Wellbeing web app on HL7 FHIR: wearable health data in one dashboard, with consent-based data sharing."},
@@ -55,9 +55,11 @@ LANG_COLORS = {
     "Jupyter Notebook": "#DA5B0B", "Java": "#B07219", "CSS": "#563D7C",
 }
 STACK = [
-    ("LANGUAGES", ["Python", "Java", "JavaScript", "C", "Haskell", "SQL"]),
-    ("BUILD", ["React", "Django", "Flask", "Angular", "Tailwind", "REST"]),
+    ("AI", ["LLM APIs", "Prompt design", "AI features", "Python ML", "Jupyter"]),
+    ("FULL-STACK", ["React", "Django", "Flask", "Angular", "Tailwind", "REST"]),
     ("CLOUD", ["AWS ECS", "ECR", "S3", "Docker", "Terraform", "CI/CD"]),
+    ("ARCHITECTURE", ["Design patterns", "API design", "Unit testing", "SonarCloud"]),
+    ("LANGUAGES", ["Python", "Java", "JavaScript", "C", "Haskell", "SQL"]),
 ]
 
 # ---------------------------------------------------------------- fonts
@@ -193,7 +195,7 @@ def hero(st):
     b = [card_bg(W, H)]
     # label
     b.append(f'<g {anim("rise", 0.05)}>'
-             + t(48, 62, "SOFTWARE ENGINEER  ·  UQ, BRISBANE", "mono6", 11, MUTED, 'letter-spacing="1.6"') + "</g>")
+             + t(48, 62, "AI & SOFTWARE ENGINEER  ·  UQ, BRISBANE", "mono6", 11, MUTED, 'letter-spacing="1.6"') + "</g>")
     # name: line 1 upright, line 2 italic with a blue shine sweeping through it
     b.append(f'<g {anim("rise", 0.18, 0.8)}>' + t(44, 148, "Hitaarnav", "serif", 84) + "</g>")
     b.append(
@@ -204,15 +206,15 @@ def hero(st):
         + '<g clip-path="url(#nm)"><rect class="shine sweep" x="-160" y="150" width="140" height="100" fill="url(#sh)"/></g></g>'
     )
     # one-liner
-    for i, line in enumerate(["Full-stack developer who takes apps from code",
-                              "to cloud: Django, React, Docker, AWS, Terraform."]):
+    for i, line in enumerate(["I build AI-powered products end to end: LLM",
+                              "features, full-stack apps and cloud architecture."]):
         b.append(f'<g {anim("rise", 0.55 + i * 0.08)}>' + t(48, 266 + i * 22, line, "sans", 15.5, MUTED) + "</g>")
     # status line with pulsing dot
     b.append(
         f'<g {anim("fade", 0.9)}>'
         f'<circle cx="54" cy="311" r="4" fill="{BLUE}"/>'
         f'<circle class="a dot" cx="54" cy="311" r="4" fill="{BLUE}"/>'
-        + t(66, 315, "Final-year BE (Hons) Software Eng  ·  open to graduate roles", "mono", 11, INK) + "</g>"
+        + t(66, 315, "Final-year BE (Hons) SE  ·  open to AI engineer & grad roles", "mono", 11, INK) + "</g>"
     )
     # ascii portrait printing in row by row
     x0, y0, lh, fs = 538, 46, 7.3, 7
@@ -346,17 +348,17 @@ def tile(idx, label, color, fg, number, caption, cta, start):
 
 
 def stack_card():
-    W, H = 840, 176
+    W, H = 840, 82 + len(STACK) * 32 + 22
     b = [card_bg(W, H)]
     b.append(f'<g {anim("rise", 0.1)}>' + t(44, 52, "Tools I reach for", "serif", 30) + "</g>")
     k = 0
     for r, (label, items) in enumerate(STACK):
         y = 82 + r * 32
         b.append(f'<g {anim("fade", 0.2 + r * 0.1)}>' + t(44, y + 15, label, "mono6", 10, MUTED, 'letter-spacing="1.4"') + "</g>")
-        x = 160
+        x = 172
         for it in items:
             w = len(it) * 7.4 + 24
-            col = [BLUE, INK, RED][r]
+            col = [BLUE, INK, RED, YELLOW, MUTED][r % 5]
             b.append(f'<g {anim("pop", 0.3 + k * 0.035, 0.45)}>'
                      f'<rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="22" rx="11" fill="none" stroke="{RULE}"/>'
                      f'<circle cx="{x + 12:.1f}" cy="{y + 11}" r="3" fill="{col}"/>'
@@ -398,9 +400,9 @@ def main():
         "activity.svg": activity(st),
         "stack.svg": stack_card(),
         "build.svg": tile(1, "BUILD", BLUE, WHITE, len(own),
-                          ["public repos: Django, React,", "Angular and a thesis tool"], "see the code", 0.1),
+                          ["public repos: AI features,", "full-stack apps, ML notebooks"], "see the code", 0.1),
         "cloud.svg": tile(2, "CLOUD", RED, WHITE, 5,
-                          ["AWS & IaC tools in my stack:", "Docker · ECS · ECR · S3 · TF"], "how I ship", 0.25),
+                          ["cloud & architecture tools:", "Docker · ECS · ECR · S3 · TF"], "how I ship", 0.25),
         "learn.svg": tile(3, "LEARN", YELLOW, INK, st["active"],
                           ["days I pushed code this year,", "final-year SE at UQ"], "say hi", 0.4),
     }
